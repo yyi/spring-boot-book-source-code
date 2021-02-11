@@ -28,6 +28,9 @@ public class ValueService {
     @Value("${author.name}")
     private String authorName;
 
+    @Value("${app.test}")
+    private String fromApplicationProperties;
+
     @Value("${os.name}")
     private String osName;
 
@@ -39,6 +42,7 @@ public class ValueService {
         System.out.println("正则匹配isValidNumber的值是：" + name);
         System.out.println("调用Bean的返回值beanReturn值是：" + beanReturn);
         System.out.println("属性查询外部配置文件authorName值是：" + authorName);
+        System.out.println("来自默认配置文件属性：" + fromApplicationProperties);
         System.out.println("属性查询操作系统环境变量authorName值是：" + osName);
     }
 }

@@ -156,12 +156,12 @@ public class JavaConfig {
         return args -> eventPublishService.publish();
     }
 
-//    @Bean
+    @Bean
     CommandLineRunner valueClr(ValueService valueService){
         return args -> valueService.doSomething();
     }
 
-//    @Bean
+    @Bean
     CommandLineRunner aopCle(PersonService personService){
         return args -> {
             personService.add("wyf");

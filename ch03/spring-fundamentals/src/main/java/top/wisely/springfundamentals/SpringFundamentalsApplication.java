@@ -1,15 +1,12 @@
 package top.wisely.springfundamentals;
 
 
-import org.springframework.boot.CommandLineRunner;
+import io.github.wiselyman.annotations.EnableABC;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import top.wisely.springfundamentals.injected.*;
 
 @SpringBootApplication
+@EnableABC
 public class SpringFundamentalsApplication {
 
 	public static void main(String[] args) {
